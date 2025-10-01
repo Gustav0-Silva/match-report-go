@@ -1,0 +1,81 @@
+/* ===== Layout Geral ===== */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f6fa;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 30px auto;
+    background: #fff;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+/* ===== Título ===== */
+h1 {
+    text-align: center;
+    font-size: 26px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+/* ===== Tabela ===== */
+.table-sumula {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.table-sumula th,
+.table-sumula td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.table-sumula th {
+    background-color: #2c3e50;
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.table-sumula tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.table-sumula tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* ===== Inputs numéricos ===== */
+.table-sumula input[type="number"] {
+    width: 50px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 13px;
+}
+
+/* ===== Botão Salvar ===== */
+.btn-salvar {
+    display: block;
+    margin: 0 auto;
+    background-color: #27ae60;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-salvar:hover {
+    background-color: #219150;
+}

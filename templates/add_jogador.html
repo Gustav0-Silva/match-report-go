@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Adicionar Jogador</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <!-- Logo -->
+    <div class="logo">
+        <img src="{{ url_for('static', filename='images/MRG_Logo.png') }}" alt="Logo MRG">
+    </div>
+    <div class="player-card">
+            <a href="{{ url_for('plantel') }}" class="close-btn">
+                <button class="close-btn">&times;</button>
+            </a>
+        <h2>Novo Jogador</h2>
+        <form method="POST">
+            <input type="text" name="nome" placeholder="Nome do Jogador" required><br>
+            <input type="text" name="posicao" placeholder="Posição" required><br>
+            <input type="number" name="numero" placeholder="Número" required><br>
+            <button type="submit" class="btn">Salvar</button>
+        </form>
+        <br>
+    </div>
+</body>
+</html>

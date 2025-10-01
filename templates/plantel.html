@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Plantel de Jogadores</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <!-- Logo -->
+    <div class="logo">
+        <img src="{{ url_for('static', filename='images/MRG_Logo.png') }}" alt="Logo MRG">
+    </div>
+
+
+    <div class="container">
+        <h2>Plantel de Jogadores</h2>
+
+        <ul class="player-list">
+            {% for jogador in jogadores %}
+                <li>{{ jogador.nome }} - {{ jogador.numero }} - {{ jogador.posicao }}
+                    <a href="{{ url_for('delete_jogador', index=jogador.id) }}" class="delete-btn">
+                        <button>&times;</button>
+                    </a>
+                </li>    
+            {% else %}
+                <li>Nenhum jogador cadastrado</li>
+                    
+            {% endfor %}
+        </ul>
+
+        <a href="{{ url_for('add_jogador') }}">
+            <button class="add-btn">+</button>
+        </a>
+
+        <br><br>
+        <a href="{{ url_for('index') }}" class="btn">Voltar</a>
+    </div>
+</body>
+</html>

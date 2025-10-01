@@ -8,7 +8,10 @@
 
 /* ===== Corpo da Página ===== */
 body {
-    background-color: #eaeaea;
+    font-family: Arial, sans-serif;
+    background-color: #e6e6e6;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,12 +20,11 @@ body {
 
 /* ===== Container Principal ===== */
 .container {
-    background-color: #f5f5f5;
-    width: 80%;
-    max-width: 900px;
+    background-color: #ffffff;
+    border-radius: 10px;
     padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    min-width: 300px;
     text-align: center;
 }
 
@@ -68,3 +70,227 @@ body {
     max-height: 20rem;
 
 }
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+input[type="text"], input[type="number"] {
+    width: 80%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button, .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 20px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+button:hover, .btn:hover {
+    background-color: #3d8b40;
+}
+
+.add-btn {
+    background-color: transparent;
+    color: #3d8b40;
+    font-size: 40px;
+    font-weight: bold;
+    border-radius: 50%;
+}
+
+.add-btn:hover {
+    background-color: transparent;
+    color: #14514f;
+
+}
+
+/* Lista de jogadores */
+.player-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 7px 0;
+}
+
+.player-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f7f7f7;
+    padding: 0px 12px;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    font-size: 12px;
+    border: #bbb 1px solid;
+}
+
+/* Botão excluir (X vermelho) */
+
+.delete-btn button{
+    background: none;
+    padding: none;
+    margin: 0 0 0 0;
+    border: 0px;
+    font-size: 17px;
+    font-weight: bold;
+    color: red;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.delete-btn button:hover {
+    color: darkred;
+}
+
+/*Botão de Fechar (X de Fechar Guia) */
+.player-card {
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    min-width: 300px;
+    text-align: center;
+}
+
+.close-btn button {
+    position: absolute;
+    top: -15px;
+    right: 0px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #666;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+    color: red;
+}
+
+
+/* Container da súmula */
+/* Container principal */
+.sumula-container {
+    width: 95%;
+    max-width: 900px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Header */
+.sumula-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.sumula-header .time-nome {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.placar {
+    width: 50px;
+    text-align: center;
+    font-size: 18px;
+    padding: 6px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.sumula-header .x {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.time-adversario {
+    flex: 1;
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+/* Tabela */
+.tabela-sumula {
+    overflow-x: auto;
+}
+
+.tabela-sumula table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 14px;
+}
+
+.tabela-sumula th {
+    background: #f2f2f2;
+    padding: 8px;
+}
+
+.tabela-sumula td {
+    padding: 6px;
+    border-bottom: 1px solid #ddd;
+}
+
+.tabela-sumula input[type="text"] {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+/* Rodapé */
+.sumula-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* Botões de tempo */
+.tempo-btn {
+    padding: 10px 15px;
+    background: #c3f0d2;
+    border: none;
+    border-radius: 50%;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.tempo-btn:hover {
+    background: #9bd8b0;
+}
+
+/* Estatísticas */
+.estatisticas {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: right;
+    font-weight: bold;
+}
+

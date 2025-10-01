@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Histórico de Partidas</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="historico-container">
+        <h2>Histórico de Partidas</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Time da Casa</th>
+                    <th>Placar</th>
+                    <th>Time Adversário</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for partida in partidas %}
+                <tr>
+                    <td>{{ partida[1] }}</td>
+                    <td>{{ partida[2] }} x {{ partida[3] }}</td>
+                    <td>{{ partida[4] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
